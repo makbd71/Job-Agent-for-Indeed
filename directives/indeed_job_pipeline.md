@@ -29,5 +29,6 @@ Facts come only from `tools/base_resume.py`; unmet requirements go to `gaps`.
 ## Stage 3: Submit
 - Needs the user's own logged-in Indeed session in Chrome (Claude in Chrome on the user's machine). A cloud session cannot log in to Indeed or drive the user's browser.
 - **Get the user's confirmation for each application before clicking Submit.** An application is sent to an employer and can't be withdrawn.
+- Screening answers the candidate has confirmed live in `applications/SCREENING_ANSWERS.md` (git-ignored; never commit them). Use only those; ask about anything marked ASK or missing.
 - On the Easy Apply form, upload the PDF from `applications/<NN>_<company>/`, answer screening questions only with facts the user has confirmed, and stop to ask if a question isn't covered by the resume (sponsorship, salary, start date, clearance).
 - After submitting, log it in the job's row of `applications/KEYWORD_MATCH_REPORT.md` or tell the user.
