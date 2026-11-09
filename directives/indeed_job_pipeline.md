@@ -10,6 +10,7 @@ Target profile:
 - Experience: roles asking for **5+ years** in SCM, procurement or ERP. Short AI-automation experience (about 1 year) is fine.
 - Skills: SQL, Python (about 1 year), an understanding of AI automation.
 - Easy Apply preferred.
+- Location: US roles only; candidate will work or relocate anywhere in the USA, so search "remote" and any US city.
 
 Search queries that worked (Nov 2026): "procurement systems ERP AI automation" (remote),
 "ERP procurement analyst" (remote), "supply chain systems analyst" (Ohio), "supply chain AI automation analyst" (Columbus, OH).
