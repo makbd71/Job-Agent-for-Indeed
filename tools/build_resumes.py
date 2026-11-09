@@ -1,7 +1,7 @@
 """Build one tailored, ATS-friendly resume (.docx + .pdf) per job profile,
 plus a keyword-match report.
 
-Usage:  python3 tools/build_resumes.py
+Usage:  python3 tools/build_resumes.py [<NN> ...]   (no args = build every profile)
 Output: applications/<NN>_<company>/  (resume .docx, resume .pdf)
         applications/KEYWORD_MATCH_REPORT.md
 """
@@ -59,6 +59,47 @@ def _section(doc, title):
     _bottom_border(p)
 
 
+def _hyperlink(paragraph, text, url, size=9):
+    r_id = paragraph.part.relate_to(
+        url, "http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink", is_external=True)
+    link = OxmlElement("w:hyperlink")
+    link.set(qn("r:id"), r_id)
+    run = OxmlElement("w:r")
+    r_pr = OxmlElement("w:rPr")
+    for tag, attrs in (("w:rFonts", {"w:ascii": FONT, "w:hAnsi": FONT}), ("w:color", {"w:val": "1F3A5F"}),
+                       ("w:u", {"w:val": "single"}), ("w:sz", {"w:val": str(int(size * 2))})):
+        el = OxmlElement(tag)
+        for k, v in attrs.items():
+            el.set(qn(k), v)
+        r_pr.append(el)
+    run.append(r_pr)
+    t = OxmlElement("w:t")
+    t.text = text
+    run.append(t)
+    link.append(run)
+    paragraph._p.append(link)
+
+
+def _contact_line(doc, size=9):
+    """Contact line with clickable email, LinkedIn and GitHub."""
+    p = _para(doc, align=WD_ALIGN_PARAGRAPH.CENTER, after=2)
+    parts = [x.strip() for x in B.HEADER["contact"].split("|")]
+    for i, part in enumerate(parts):
+        if i:
+            sep = p.add_run(" | ")
+            sep.font.size = Pt(size)
+            sep.font.name = FONT
+        if "@" in part:
+            _hyperlink(p, part, f"mailto:{part}", size)
+        elif part.startswith(("linkedin.com", "github.com")):
+            _hyperlink(p, part, f"https://{part}", size)
+        else:
+            r = p.add_run(part)
+            r.font.size = Pt(size)
+            r.font.name = FONT
+    return p
+
+
 def _bullet(doc, text, size=9.5):
     p = doc.add_paragraph(style="List Bullet")
     pf = p.paragraph_format
@@ -98,7 +139,7 @@ def build_docx(job, path):
 
     _para(doc, B.HEADER["name"], size=17, bold=True, align=WD_ALIGN_PARAGRAPH.CENTER, color=ACCENT)
     _para(doc, job["headline"], size=10.5, bold=True, align=WD_ALIGN_PARAGRAPH.CENTER, after=1)
-    _para(doc, B.HEADER["contact"], size=9, align=WD_ALIGN_PARAGRAPH.CENTER, after=2)
+    _contact_line(doc)
 
     _section(doc, "PROFESSIONAL SUMMARY")
     _para(doc, job["summary"], size=9.5, after=2)
@@ -190,8 +231,13 @@ def report(jobs):
 
 def main():
     OUT.mkdir(exist_ok=True)
+    wanted = {a.zfill(2) for a in sys.argv[1:]}
+    selected = [j for j in JOBS if not wanted or j["folder"][:2] in wanted]
+    unknown = wanted - {j["folder"][:2] for j in JOBS}
+    if unknown:
+        sys.exit(f"No profile numbered: {', '.join(sorted(unknown))}")
     missing = []
-    for job in JOBS:
+    for job in selected:
         folder = OUT / job["folder"]
         folder.mkdir(parents=True, exist_ok=True)
         stem = f"Mohammad_Kabir_Resume_{job['file_tag']}"
