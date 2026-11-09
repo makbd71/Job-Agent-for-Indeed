@@ -33,7 +33,7 @@ LLMs are probabilistic by nature, whereas most business logic is deterministic a
 ## Repository layout
 
 ```
-directives/            # Layer 1: SOPs in Markdown
+directives/            # Layer 1: SOPs in Markdown (start with indeed_job_pipeline.md)
 tools/                 # Layer 3: deterministic Python scripts and data
   base_resume.py       #   source-of-truth resume facts (bullets keyed by ID)
   job_profiles.py      #   per-job tailoring: summary, competencies, keywords, rewrites, gaps

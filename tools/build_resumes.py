@@ -1,7 +1,8 @@
 """Build one tailored, ATS-friendly resume (.docx + .pdf) per job profile,
 plus a keyword-match report.
 
-Usage:  python3 tools/build_resumes.py
+Usage:  python3 tools/build_resumes.py            # build every job
+        python3 tools/build_resumes.py 09 10      # build only folders starting with 09, 10
 Output: applications/<NN>_<company>/  (resume .docx, resume .pdf)
         applications/KEYWORD_MATCH_REPORT.md
 """
@@ -11,6 +12,7 @@ from pathlib import Path
 
 from docx import Document
 from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.opc.constants import RELATIONSHIP_TYPE as RT
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Inches, Pt, RGBColor
@@ -52,6 +54,58 @@ def _para(doc, text="", size=10, bold=False, align=None, after=0, before=0, colo
         if color:
             r.font.color.rgb = color
     return p
+
+
+def _hyperlink(paragraph, text, url, size):
+    """Append a clickable hyperlink run (blue, underlined) to a paragraph."""
+    r_id = paragraph.part.relate_to(url, RT.HYPERLINK, is_external=True)
+    link = OxmlElement("w:hyperlink")
+    link.set(qn("r:id"), r_id)
+    run = OxmlElement("w:r")
+    rpr = OxmlElement("w:rPr")
+    fonts = OxmlElement("w:rFonts")
+    for a in ("w:ascii", "w:hAnsi", "w:cs"):
+        fonts.set(qn(a), FONT)
+    color = OxmlElement("w:color")
+    color.set(qn("w:val"), "0563C1")
+    u = OxmlElement("w:u")
+    u.set(qn("w:val"), "single")
+    sz = OxmlElement("w:sz")
+    sz.set(qn("w:val"), str(int(size * 2)))
+    for el in (fonts, color, u, sz):
+        rpr.append(el)
+    run.append(rpr)
+    t = OxmlElement("w:t")
+    t.text = text
+    t.set(qn("xml:space"), "preserve")
+    run.append(t)
+    link.append(run)
+    paragraph._p.append(link)
+
+
+def _link_for(item):
+    if "@" in item:
+        return f"mailto:{item}"
+    if item.startswith(("linkedin.com", "github.com")):
+        return f"https://{item}"
+    return None
+
+
+def _contact_line(doc, contact, size=9):
+    """Contact line with email / LinkedIn / GitHub as clickable links, like the original resume."""
+    p = _para(doc, align=WD_ALIGN_PARAGRAPH.CENTER, after=2)
+    for i, item in enumerate(contact.split(" | ")):
+        if i:
+            r = p.add_run(" | ")
+            r.font.size = Pt(size)
+            r.font.name = FONT
+        url = _link_for(item)
+        if url:
+            _hyperlink(p, item, url, size)
+        else:
+            r = p.add_run(item)
+            r.font.size = Pt(size)
+            r.font.name = FONT
 
 
 def _section(doc, title):
@@ -98,7 +152,7 @@ def build_docx(job, path):
 
     _para(doc, B.HEADER["name"], size=17, bold=True, align=WD_ALIGN_PARAGRAPH.CENTER, color=ACCENT)
     _para(doc, job["headline"], size=10.5, bold=True, align=WD_ALIGN_PARAGRAPH.CENTER, after=1)
-    _para(doc, B.HEADER["contact"], size=9, align=WD_ALIGN_PARAGRAPH.CENTER, after=2)
+    _contact_line(doc, B.HEADER["contact"])
 
     _section(doc, "PROFESSIONAL SUMMARY")
     _para(doc, job["summary"], size=9.5, after=2)
@@ -191,7 +245,10 @@ def report(jobs):
 def main():
     OUT.mkdir(exist_ok=True)
     missing = []
+    only = sys.argv[1:]
     for job in JOBS:
+        if only and not job["folder"].startswith(tuple(only)):
+            continue
         folder = OUT / job["folder"]
         folder.mkdir(parents=True, exist_ok=True)
         stem = f"Mohammad_Kabir_Resume_{job['file_tag']}"

@@ -431,4 +431,195 @@ JOBS = [
                    "automated approval workflows (73% less paperwork).",
         },
     },
+    # ------------------------------------------------------------------ 9
+    {
+        "folder": "09_Nordic_Naturals_Sr_BI_Analyst_Procurement",
+        "file_tag": "NordicNaturals_Sr_BI_Analyst_Procurement",
+        "company": "Nordic Naturals",
+        "role": "Sr. Business Intelligence Analyst - Procurement",
+        "location": "Watsonville, CA (Remote or On-Site)",
+        "pay": "$90K – $115K",
+        "posted": "Sep 1, 2026",
+        "url": "https://to.indeed.com/aagzx8pcrjdq",
+        "fit": "Strongest match. Analytics-first procurement role that wants spend/PPV analysis, ERP data, "
+               "SQL/Python and AI-enabled procurement tools: exactly your Premier Health work. Posted Sep 1, so "
+               "apply soon.",
+        "headline": "Procurement Analytics & Spend Analysis | Cost Modeling & Savings | "
+                    "AI & Data Analytics (SQL, Power BI, Python)",
+        "summary": "Procurement analytics professional with 7+ years across procurement, strategic sourcing and supply "
+                   "chain analytics in healthcare, industrial automation, automotive and humanitarian supply chains. "
+                   "Turns ERP and supplier data into spend analysis, PPV and cost-variance reporting, procurement KPI "
+                   "dashboards and savings visibility for leadership, using SQL, Advanced Excel, Power BI and Python. "
+                   "Implements AI-enabled procurement tools (Google Gemini, Claude) and prototyped an agent workflow "
+                   "from requisition to RFQ to quote analysis. Delivered a 29% lead-time reduction and 96% "
+                   "procurement accuracy across 120+ suppliers and supported an ERP transformation from Infor Lawson "
+                   "to Infor FSM. M.S. Business Analytics; MBA Finance; Six Sigma Green Belt.",
+        "competencies": [
+            "Spend Analysis & Cost Visibility", "Cost Modeling & Total Cost of Ownership",
+            "PPV, Variance & Savings Tracking", "Procurement KPI Dashboards (Power BI, Excel)",
+            "Supplier Performance Scorecards", "Data Cleansing, Validation & Standardization",
+            "RFI / RFP Support & Workflow Automation", "Executive Reporting & Presentations",
+            "Finance Partnership & Cost Controls", "Process Improvement (Six Sigma DMAIC)",
+            "AI-Enabled Procurement Tools, SQL, Python", "ERP: SAP MM, Infor FSM Cloud Suite",
+        ],
+        "keywords": [
+            ("Spend analysis", "Spend and PPV analysis at Premier Health", "spend analysis"),
+            ("Cost modeling / TCO", "Analyzed supplier cost breakdowns vs. targets at Schneider", "cost model"),
+            ("Procurement KPI dashboards", "Recurring KPI reports for management at Premier Health", "dashboard"),
+            ("BI tools (Power BI)", "Power BI, Advanced Excel", "power bi"),
+            ("ERP / SAP", "SAP MM at BWI; Infor FSM at Premier Health", "sap mm"),
+            ("Savings tracking with Finance", "Cost and pricing variance analysis; MBA Finance; financial analyst background", "savings"),
+            ("Supplier KPIs & scorecards", "Supplier KPIs on 120+ suppliers (AAH) and at Schneider", "scorecard"),
+            ("Data cleansing & standardization", "SQL validation; fixed duplicate-record join fan-out; +32% BOM data accuracy", "data cleansing"),
+            ("SQL / Python", "SQL against ERP data warehouse; Python (certification 2026)", "python"),
+            ("AI-enabled procurement tools", "Implemented Gemini/Claude; prototyped requisition-to-RFQ agent workflow", "ai-enabled procurement"),
+        ],
+        "gaps": ["Domo (you have Power BI, which the posting lists as an equivalent)",
+                 "Commodity market and cost-index tracking (fish oil, resins, freight) not on record",
+                 "Kraljic-style supplier segmentation not on record"],
+        "bullet_overrides": {
+            "ph1": "Perform spend analysis and purchase price variance (PPV) analysis on ERP data to build recurring "
+                   "procurement KPI reports and dashboards for management, improving cost visibility and supporting "
+                   "cost-reduction decisions across a multi-hospital health system.",
+            "ph4": "Write SQL against the ERP data warehouse for data cleansing, validation and reporting of "
+                   "procurement data; traced a duplicate-record issue to a join fan-out across vendor address and "
+                   "location tables and resolved it.",
+            "ph5": "Implement and test AI-enabled procurement tools (Google Gemini, Claude) for supply chain planning "
+                   "and reporting and prototype an agent workflow that automates requisition to RFQ to quote analysis "
+                   "to work order.",
+            "se1": "Supported RFQs for OEM parts against engineering drawings, technical requirements and cost targets; "
+                   "built cost models from supplier quotations and cost breakdowns to support award decisions on the "
+                   "Made in America (MIA) industrial automation program.",
+            "se3": "Contributed to a 100% on-time delivery rate; maintained supplier KPI scorecards (delivery, quality, "
+                   "compliance) and resolved GR/IR discrepancies and blocked invoices.",
+            "bw4": "Used SQL and Excel for supplier data analysis and metric validation; performed cost and pricing "
+                   "variance analysis to identify and track savings and support inventory-policy adjustments.",
+        },
+        "bullet_order": {"ph": ["ph1", "ph4", "ph5", "ph2", "ph3"]},
+    },
+    # ------------------------------------------------------------------ 10
+    {
+        "folder": "10_Vectra_AI_Supply_Chain_Specialist",
+        "file_tag": "VectraAI_Supply_Chain_Specialist",
+        "company": "Vectra AI",
+        "role": "Supply Chain Specialist",
+        "location": "Remote (Pacific or Central time zone), 10% travel",
+        "pay": "$100K – $120K",
+        "posted": "Nov 6, 2026",
+        "url": "https://to.indeed.com/aatfdtqmg9z2",
+        "fit": "Strong. Supplier performance, PPV, NPI/BOM and process automation all match. Watch out: the remote role "
+               "must be based in the Pacific or Central time zone (you are in Eastern). Your relocation flexibility "
+               "helps; confirm before applying.",
+        "headline": "Supplier Management & Procurement | NPI, BOM & Supply Continuity | "
+                    "AI & Data Analytics (SQL, Excel, Python)",
+        "summary": "Supply chain and procurement professional with 7+ years in supplier management, purchasing, "
+                   "material availability and supply continuity across industrial automation, automotive, healthcare "
+                   "and humanitarian supply chains. Supported new product introduction (NPI) at Schneider Electric "
+                   "by integrating 35 suppliers for 75+ parts and validating readiness for production ramp-up, "
+                   "contributing to 100% on-time delivery. Improved SAP MM and BOM data accuracy 32%, resolved "
+                   "material shortages and late deliveries, and uses PPV and cost analysis to drive cost "
+                   "optimization. Automates reporting and procurement workflows with SQL, Python and AI tools. "
+                   "M.S. Business Analytics; Six Sigma Green Belt.",
+        "competencies": [
+            "Supplier Performance Management & Scorecards", "Procurement & Purchase Order Management",
+            "New Product Introduction (NPI) Readiness", "Bill of Materials (BOM) Accuracy",
+            "Material Availability & Shortage Resolution", "Inventory Planning & Supply Continuity",
+            "Supplier Quotations & Commercial Negotiation", "PPV & Cost Optimization",
+            "Cross-Functional Collaboration", "Process Standardization & Automation",
+            "AI Automation, SQL, Advanced Excel, Python", "ERP: SAP MM, Infor FSM Cloud Suite",
+        ],
+        "keywords": [
+            ("Supplier performance metrics", "Supplier KPIs (quality, cost, delivery) for 120+ suppliers", "supplier performance"),
+            ("Supplier scorecards & corrective actions", "Supplier KPI tracking and corrective actions (Schneider, BWI)", "scorecard"),
+            ("NPI", "Schneider Electric NPI: 35 suppliers, 75+ parts", "new product introduction"),
+            ("Bill of materials (BOM)", "+32% SAP MM and BOM data accuracy at BWI", "bom"),
+            ("Material shortages / supply constraints", "Shortage and late-delivery root cause at BWI", "material shortages"),
+            ("Purchase price variance", "PPV reporting at Premier Health", "purchase price variance"),
+            ("Evaluate quotations / negotiate terms", "Quote analysis and negotiations (Schneider, AAH)", "quotations"),
+            ("Inventory planning", "Inventory-policy adjustments at BWI; inventory requirements in Infor FSM", "inventory"),
+            ("Process automation & reporting", "ERP approval workflow automation (73% less paperwork); AI agent workflow", "automation"),
+            ("ERP / procurement systems", "SAP MM, Infor FSM", "erp"),
+        ],
+        "gaps": ["NetSuite / Salesforce (you have SAP MM and Infor FSM instead)",
+                 "Contract manufacturers / electronics distributors not on record",
+                 "EOS/EOL and component obsolescence management not on record",
+                 "Location: role requires Pacific or Central time zone"],
+        "bullet_overrides": {
+            "ph1": "Analyze spend and purchase price variance (PPV) data to build recurring KPI reports for management, "
+                   "surfacing recurring cost issues and supporting cost optimization across a multi-hospital health "
+                   "system.",
+            "se2": "Supported new product introduction (NPI) by leading supplier onboarding and audits across North "
+                   "America, integrating 35 suppliers for 75+ parts and tracking material availability, capacity, "
+                   "lead-time and delivery readiness before production ramp-up.",
+            "se3": "Contributed to a 100% on-time delivery rate; tracked supplier performance scorecards (delivery, "
+                   "quality, compliance) and resolved GR/IR discrepancies and blocked invoices.",
+            "se1": "Ran supplier sourcing and RFQs for OEM parts against engineering drawings and cost targets; "
+                   "evaluated supplier quotations and cost breakdowns to support award decisions on the Made in "
+                   "America (MIA) industrial automation program.",
+            "bw3": "Identified material shortages, late deliveries and lead-time constraints, found root causes and "
+                   "drove corrective actions with suppliers and cross-functional teams to protect supply continuity.",
+            "ah5": "Led implementation of an ERP-based procurement system replacing manual processes and adding "
+                   "automation to approval workflows (73% less paperwork).",
+        },
+        "bullet_order": {"se": ["se2", "se1", "se3", "se4", "se5"]},
+    },
+    # ------------------------------------------------------------------ 11
+    {
+        "folder": "11_Symbotic_Buyer_Direct_Materials",
+        "file_tag": "Symbotic_Buyer_Direct_Materials",
+        "company": "Symbotic",
+        "role": "Buyer - Direct Materials",
+        "location": "Wilmington, MA (posting tagged remote)",
+        "pay": "$69K – $101.2K",
+        "posted": "Oct 29, 2026",
+        "url": "https://to.indeed.com/aa9fzl7lzdcp",
+        "fit": "Good, but you are overqualified (1-3 years required; you have 7+). This is an AI and robotics supply "
+               "chain company, so it builds toward AI-automation roles. Pay is the lowest of the three.",
+        "headline": "Direct Materials Purchasing | Supplier Delivery & Shortages | "
+                    "AI & Data Analytics (SQL, Excel, Python)",
+        "summary": "Procurement and supply chain professional with 7+ years managing purchase orders, supplier delivery "
+                   "commitments, material availability and supplier performance for manufacturing programs in "
+                   "industrial automation and automotive, plus healthcare and humanitarian supply chains. At "
+                   "Schneider Electric, ran RFQs for OEM parts and onboarded 35 suppliers for 75+ parts, contributing "
+                   "to 100% on-time delivery; at BWI, resolved material shortages and improved SAP MM/BOM data "
+                   "accuracy 32%. Tracks supplier pricing and cost changes with SQL and Excel and builds AI automation "
+                   "for procurement workflows. M.S. Business Analytics; Six Sigma Green Belt.",
+        "competencies": [
+            "Purchase Order Execution & Expediting", "Supplier Delivery & On-Time Performance",
+            "Material Shortage Resolution", "Demand, Inventory & Capacity Analysis",
+            "Supplier Pricing, Quotations & Cost Tracking", "RFQs & Supplier Benchmarking",
+            "Engineering Changes & New Part Introductions", "Supplier Performance Reviews",
+            "Cross-Functional Collaboration", "Process Improvement (Six Sigma DMAIC)",
+            "AI Automation, SQL, Advanced Excel, Python", "ERP: SAP MM, Infor FSM Cloud Suite",
+        ],
+        "keywords": [
+            ("Purchase orders", "End-to-end procure-to-pay for 15+ projects (AAH)", "purchase order"),
+            ("On-time delivery", "100% on-time delivery at Schneider", "on-time delivery"),
+            ("Material shortages / expediting", "Shortage root-cause and corrective actions at BWI", "material shortages"),
+            ("Supplier capacity", "Tracked supplier capacity and lead time before launch", "capacity"),
+            ("Supplier pricing & cost changes", "Cost and pricing variance analysis at BWI; PPV at Premier", "pricing"),
+            ("RFQs / benchmarking", "RFQs for OEM parts at Schneider", "rfq"),
+            ("New part introductions", "Schneider NPI: 35 suppliers, 75+ parts", "new part introduction"),
+            ("Supplier performance reviews", "Supplier KPIs: quality, delivery, compliance", "supplier performance"),
+            ("ERP systems (SAP)", "SAP MM at BWI; Infor FSM", "sap"),
+            ("Excel & data analysis", "SQL and Excel supplier data analysis", "excel"),
+        ],
+        "gaps": ["Contract manufacturers / EMS providers not on record",
+                 "Hands-on with motors, batteries and cable assemblies not on record (your OEM experience is interior "
+                 "and packaging parts)"],
+        "bullet_overrides": {
+            "ah2": "Led end-to-end procure-to-pay for 15+ emergency response projects, from requisition and purchase "
+                   "order approvals through delivery tracking, expediting and invoice reconciliation.",
+            "se2": "Supported new part introductions by leading supplier onboarding and audits across North America, "
+                   "integrating 35 suppliers for 75+ interior and packaging parts and tracking quality, capacity, "
+                   "lead-time and delivery readiness before production launch.",
+            "se3": "Contributed to a 100% on-time delivery rate; reported supplier performance on delivery, quality and "
+                   "compliance and resolved GR/IR discrepancies and blocked invoices.",
+            "bw3": "Analyzed material shortages, late deliveries and lead-time constraints to identify root causes, "
+                   "driving corrective actions and recovery plans with suppliers and cross-functional teams.",
+            "bw4": "Used SQL and Excel for supplier data analysis and metric validation; tracked supplier pricing and "
+                   "cost variances to identify savings and support inventory-policy adjustments.",
+        },
+        "bullet_order": {"bw": ["bw3", "bw1", "bw2", "bw4"]},
+    },
 ]
