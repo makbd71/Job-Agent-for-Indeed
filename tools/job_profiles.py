@@ -264,6 +264,7 @@ JOBS = [
         "pay": "$86.8K – $165.2K",
         "posted": "Nov 6, 2026",
         "url": "https://to.indeed.com/aabvpq79yy8l",
+        "excluded": "Requires U.S. citizenship; candidate is not a U.S. citizen (see CLAUDE.md).",
         "fit": "Moderate. Negotiation, price analysis and SAP match. Hard requirements: **U.S. citizenship** and "
                "DoD/FAR/DFARS/ITAR experience. Apply only if you're a U.S. citizen.",
         "headline": "Procurement & Supplier Negotiations | Cost/Price & Best-Value Analysis | Source Selection | "

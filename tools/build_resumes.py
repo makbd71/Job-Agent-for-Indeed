@@ -17,7 +17,10 @@ from docx.shared import Inches, Pt, RGBColor
 
 sys.path.insert(0, str(Path(__file__).parent))
 import base_resume as B  # noqa: E402
-from job_profiles import JOBS  # noqa: E402
+from job_profiles import JOBS as ALL_JOBS  # noqa: E402
+
+# Jobs marked "excluded" (e.g. U.S. citizenship required) are never built.
+JOBS = [j for j in ALL_JOBS if not j.get("excluded")]
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "applications"
