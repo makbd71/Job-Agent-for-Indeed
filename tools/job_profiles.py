@@ -431,4 +431,66 @@ JOBS = [
                    "automated approval workflows (73% less paperwork).",
         },
     },
+    # ------------------------------------------------------------------ 9
+    {
+        "folder": "09_Symbotic_NPI_Procurement_Manager",
+        "file_tag": "Symbotic_NPI_Procurement_Manager",
+        "company": "Symbotic",
+        "role": "NPI Procurement Manager",
+        "location": "Remote (Wilmington, MA)",
+        "pay": "$104,250 - $152,900",
+        "posted": "Nov 12, 2026",
+        "url": "https://to.indeed.com/aa89yx8pygzf",
+        "fit": "Strong. NPI sourcing with Engineering and Program Management at Schneider Electric (industrial "
+               "automation), 7+ yrs procurement, SAP and Advanced Excel. Aftersales/spare-parts sourcing is the gap. "
+               "Easy Apply; asks about sponsorship (answer Yes, F-1 OPT).",
+        "headline": "NPI Procurement & Strategic Sourcing | Engineering & Program Management Partnership | "
+                    "Cost Model Support | PO Execution | SAP MM, Advanced Excel",
+        "summary": "Procurement professional with 7+ years in sourcing, supplier management and new product "
+                   "introduction (NPI) support for manufacturing programs in industrial automation and automotive. At "
+                   "Schneider Electric, ran sourcing and RFQs against engineering drawings and cost targets, "
+                   "analyzed supplier quotations and cost breakdowns, and onboarded 35 suppliers for 75+ parts with "
+                   "readiness tracking before production launch, contributing to 100% on-time delivery. Works "
+                   "daily with Engineering, Quality, Program Management and Logistics to manage supply risk and "
+                   "keep purchase order execution on schedule. Uses SAP MM, Infor FSM, SQL and Advanced Excel to "
+                   "report cost and schedule status. M.S. Business Analytics; Six Sigma Green Belt.",
+        "competencies": [
+            "NPI Procurement & Sourcing Plans", "Strategic Sourcing & Category Strategy",
+            "Engineering & Program Management Partnership", "Purchase Order Execution & Delivery Tracking",
+            "Cost Model Support & Supplier Quote Analysis", "Supply & Financial Risk Escalation",
+            "Supplier Onboarding & Qualification", "Managing Multiple Concurrent Programs",
+            "Program Status Reporting (Cost, Schedule, Risk)", "Supplier Relationship Management",
+            "ERP/MRP: SAP MM, Infor FSM", "Advanced Excel, SQL, Power BI",
+        ],
+        "keywords": [
+            ("NPI / new product development", "Schneider Electric NPI project", "npi"),
+            ("Sourcing strategy / sourcing plans", "Sourcing and RFQs at Schneider; strategic sourcing at AAH", "sourcing plans"),
+            ("Engineering and program management partnership", "Worked with Engineering, Quality, Program Mgmt at Schneider", "program management"),
+            ("Purchase order execution", "P2P for 15+ projects; PO and delivery tracking", "purchase order"),
+            ("Cost model / should-cost", "Analyzed supplier quotations and cost breakdowns", "cost breakdowns"),
+            ("Risk identification and escalation", "Root-cause and risk mitigation at BWI; supplier readiness at Schneider", "risk"),
+            ("Multiple concurrent programs", "15+ concurrent response projects at AAH", "concurrent"),
+            ("Category management", "Sourcing across categories", "category strategy"),
+            ("ERP/MRP (SAP preferred)", "SAP MM at BWI; Infor FSM at Premier", "sap mm"),
+            ("Advanced Excel", "Daily Excel use", "advanced excel"),
+        ],
+        "gaps": ["Aftersales and spare-parts (RSPL) sourcing, warranty exposure (not on record)",
+                 "Robotics / material handling industry experience (closest: industrial automation at Schneider)",
+                 "Approved Vendor List (AVL) ownership during design (supplier onboarding is the closest match)"],
+        "bullet_order": {"se": ["se1", "se4", "se2", "se3", "se5"]},
+        "bullet_overrides": {
+            "se1": "Supported NPI sourcing for the Made in America (MIA) industrial automation program: ran supplier "
+                   "sourcing and RFQs against engineering drawings, technical requirements and cost targets, and "
+                   "analyzed supplier quotations and cost breakdowns to support award decisions.",
+            "se4": "Partnered with Engineering, Quality, Program Management and Logistics to validate supplier "
+                   "readiness and resolve commercial and delivery issues before pre-production and mass production.",
+            "se3": "Contributed to a 100% on-time delivery rate by tracking purchase order delivery and supplier KPIs "
+                   "(delivery, quality, compliance); resolved GR/IR discrepancies and blocked invoices.",
+            "ah2": "Managed 15+ concurrent emergency response projects end to end, from requisition and approvals "
+                   "through purchase order execution, delivery tracking and invoice reconciliation.",
+            "ph1": "Extract and analyze spend and purchase price variance (PPV) data to build recurring KPI reports "
+                   "for management, surfacing recurring cost issues and supporting cost-reduction decisions across a "
+                   "multi-hospital health system.",
+        },
+    },
 ]
